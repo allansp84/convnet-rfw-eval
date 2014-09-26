@@ -6,7 +6,6 @@
 #   numpy>=1.6.2
 #   scipy>=0.10.1
 #   sklearn>=0.12
-#   simplehp
 
 import optparse
 import time

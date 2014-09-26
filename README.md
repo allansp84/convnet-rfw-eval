@@ -7,7 +7,7 @@ The models provided in `models.py` were optimized with [hyperopt](https://github
 Supported datasets:
 
 * [PubFig83](https://www.dropbox.com/s/0ez5p9bpjxobrfv/pubfig83-aligned.tar.bz2)
-* [CalTech256](https://www.dropbox.com/s/0ez5p9bpjxobrfv/pubfig83-aligned.tar.bz2)
+* [CalTech256](http://www.vision.caltech.edu/Image_Datasets/Caltech256/256_ObjectCategories.tar)
 
 While the main requirement is [convnet-rfw](http:/github.com/giovanichiachia/convnet-rfw), other dependencies to execute the code are:
 

@@ -6,11 +6,10 @@ import os
 from glob import glob
 import numpy as np
 
-from simplehp.opt.base import Dataset
-from simplehp.util.util import (get_folders_recursively, load_imgs)
+from util import (get_folders_recursively, load_imgs, NotAllowedMethod)
 
 
-class RndSplitDataset(Dataset):
+class RndSplitDataset():
     """
     Interface for datasets whose evaluation protocol consists on randomly
     splitting the samples.
@@ -145,6 +144,8 @@ class RndSplitDataset(Dataset):
 
     def hp_imgs(self):
 
+        raise NotAllowedMethod
+
         return self.imgs[self.meta['hp_idxs']]
 
 
@@ -189,6 +190,8 @@ class RndSplitDataset(Dataset):
 
     def hp_eval(self, algo, feat_set):
 
+        raise NotAllowedMethod
+
         hp_labels = self.meta['all_labels'][self.meta['hp_idxs']]
 
         # -- normalize features
@@ -206,6 +209,8 @@ class RndSplitDataset(Dataset):
 
 
     def protocol_imgs(self):
+
+        raise NotAllowedMethod
 
         return self.imgs
 
