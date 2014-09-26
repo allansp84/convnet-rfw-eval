@@ -40,6 +40,8 @@ def eval(dataset, dataset_path, model):
     if len(imgs) > 0:
 
         feat_set = extractor.extract(imgs)
+
+        print 'feat_set.shape', feat_set.shape
         feat_set.shape = feat_set.shape[0], -1
 
         # -- make sure features were properly extracted
