@@ -17,3 +17,23 @@ While the main requirement is [convnet-rfw](http:/github.com/giovanichiachia/con
 * [scikit-learn](http://scikit-learn.org/)>=0.12
 
 Make sure they are all available in your python environment. In order to avoid disk swapping, evaluations on the supported datasets require 12GB of RAM.
+
+Once everything is setup properly, you should be able to get something like this:
+
+```
+python eval.py 01 <PUBFIG83_PATH> -M pubfig83
+...
+feat_set.shape (13838, 7, 7, 256)
+evaluating feature according to the dataset protocol...
+{'acc': 0.8943373, 'loss': 0.10566270351409912}
+protocol executed in 383.107 seconds...
+```
+
+```
+python eval.py 02 <CALTECH256_PATH> -M caltech256
+...
+feat_set.shape (30607, 10, 10, 256)
+evaluating feature according to the dataset protocol...
+{'acc': 0.22682288, 'loss': 0.77317711710929871}
+protocol executed in 1574.94 seconds...
+```
